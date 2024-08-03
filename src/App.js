@@ -8,6 +8,7 @@ function App() {
   
   return (
    <>
+   <h1>hamed</h1>
    <header className=''>
     <Nav/>
    </header>
