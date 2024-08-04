@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import "../home/Home.css"
-import Img1 from "../../../Imge/download.png"
+import Img1 from "../../Imge/download.png"
 function Home() {
   return (
     <>

@@ -1,5 +1,5 @@
 .hero_men {
-    background-image: url('../../../Imge/hero_men.jpg');
+    background-image: url('../../Imge/hero_men.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +28,7 @@
   }
   
 .hero_women{
-    background-image: url("../../../Imge/portrait-photorealistic-female-cowboy-sunset.jpg");
+    background-image: url("../../Imge/portrait-photorealistic-female-cowboy-sunset.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,7 +54,7 @@
     background-color: #429F62;
   }
   .position_1_mark{
-    background-image: url("../../../Imge/cowgirl1.jpg");
+    background-image: url("../../Imge/cowgirl1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,7 +66,7 @@
     top: 15rem;
   }
   .position_2_mark{
-    background-image: url("../../../Imge/cowgirl2.jpg");
+    background-image: url("../../Imge/cowgirl2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,7 +79,7 @@
     left: 5rem;
   }
   .position_3_mark{
-    background-image: url("../../../Imge/cowgirl3.jpg");
+    background-image: url("../../Imge/cowgirl3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,7 +92,7 @@
     left: 5rem;
   }
   .position_4_mark{
-    background-image: url("../../../Imge/cowgirl4.jpg");
+    background-image: url("../../Imge/cowgirl4.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -105,7 +105,7 @@
     left: 5rem;
   }
   .position_5_mark{
-    background-image: url("../../../Imge/cowboy1.jpg");
+    background-image: url("../../Imge/cowboy1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,7 +118,7 @@
     left: 5rem;
   }
   .position_6_mark{
-    background-image: url("../../../Imge/cowboy2.jpg");
+    background-image: url("../../Imge/cowboy2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,7 +131,7 @@
     left: 5rem;
   }
   .position_7_mark{
-    background-image: url("../../../Imge/cowboy3.jpg");
+    background-image: url("../../Imge/cowboy3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,7 +144,7 @@
     left: 5rem;
   }
   .position_8_mark{
-    background-image: url("../../../Imge/cowboy4.jpg");
+    background-image: url("../../Imge/cowboy4.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
