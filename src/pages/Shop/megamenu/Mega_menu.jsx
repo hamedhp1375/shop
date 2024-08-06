@@ -1,7 +1,24 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Li_custom from "../../../component/Li-custom/Li_custom";
 class Mega_menu extends Component {
   state = {
+    womanproducts: [
+      { id: 1, name: "shirts", price: [100, "$"] },
+      { id: 2, name: "shoes", price: [100, "$"] },
+      { id: 3, name: "woman bags", price: [100, "$"] },
+      { id: 4, name: "woman gift", price: [100, "$"] },
+      { id: 5, name: "skirts", price: [100, "$"] },
+      { id: 6, name: "tops", price: [100, "$"] },
+    ],
+    manproducts: [
+      { id: 9, name: "man bags", price: [100, "$"] },
+      { id: 10, name: "man gift", price: [100, "$"] },
+      { id: 11, name: "belts", price: [100, "$"] },
+      { id: 12, name: "t-shirts", price: [100, "$"] },
+      { id: 13, name: "blouses", price: [100, "$"] },
+      { id: 14, name: "jean", price: [100, "$"] },
+    ],
     mega_menu_is_open: false,
   };
   showmenu = () => {
@@ -11,6 +28,18 @@ class Mega_menu extends Component {
   };
 
   render() {
+    const woman_menu= this.state.womanproducts.map((item,index)=>{
+       return(
+      <Li_custom addres="#" name={item.name} />
+    )
+    })
+
+    const man_menu= this.state.manproducts.map((item,index)=>{
+      return(
+     <Li_custom addres="#" name={item.name} />
+   )
+   })
+
     return (
       <>
         <nav>
@@ -20,48 +49,14 @@ class Mega_menu extends Component {
               <div className="mega-menu-section col-6">
                 <h3>woman</h3>
                 <ul class="list-group">
-                 
-                  <li class="list-group-item">
-                  <Link className="text-decoration-none text-body" to="#">shoes</Link>
-                    </li>
-                  <li class="list-group-item">
-                  <Link className="text-decoration-none text-body" to="#">woman bag</Link>
-                    </li>
-                  <li class="list-group-item">
-                  <Link className="text-decoration-none text-body" to="#">woman gift</Link>
-                    </li>
-                  <li class="list-group-item">
-                  <Link className="text-decoration-none text-body" to="#">tops</Link>
-                    </li>
-                  <li class="list-group-item">
-                  <Link className="text-decoration-none text-body" to="#"> blouses</Link>
-                   </li>
-                  <li class="list-group-item">
-                  <Link className="text-decoration-none text-body" to="#">jeans</Link>
-                    </li>
+                 {woman_menu}
+                  
                 </ul>
               </div>
               <div className="mega-menu-section col-6">
                 <h3>men</h3>
                 <ul class="list-group">
-                  <li class="list-group-item">
-                    <Link className="text-decoration-none text-body" to="#">man bags</Link>
-                  </li>
-                  <li class="list-group-item">
-                  <Link className="text-decoration-none text-body" to="#">man gift</Link>
-                    </li>
-                  <li class="list-group-item">
-                  <Link className="text-decoration-none text-body" to="#">belts</Link>
-                    </li>
-                  <li class="list-group-item">
-                  <Link className="text-decoration-none text-body" to="#">t-shirts</Link>
-                    </li>
-                  <li class="list-group-item">
-                  <Link className="text-decoration-none text-body" to="#">blouses</Link>
-                    </li>
-                  <li class="list-group-item">
-                  <Link className="text-decoration-none text-body" to="#">jeans</Link>
-                    </li>
+                  {man_menu}
                 </ul>
               </div>
             </div>
