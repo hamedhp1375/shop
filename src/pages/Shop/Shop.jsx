@@ -18,7 +18,7 @@ class Shop extends Component {
       { id: 11, name: "belts", price: [100, "$"] },
       { id: 12, name: "t-shirts", price: [100, "$"] },
       { id: 13, name: "blouses", price: [100, "$"] },
-      { id: 14, name: "jeans", price: [100, "$"] },
+      { id: 14, name: "jean", price: [100, "$"] },
     ],
   };
 
@@ -40,7 +40,7 @@ class Shop extends Component {
     return (
       <div>
         <header className="">
-          <Mega_menu />
+          <Mega_menu womanproducts={this.state.womanproducts} manproducts={this.state.manproducts} />
         </header>
 
         <Row>
