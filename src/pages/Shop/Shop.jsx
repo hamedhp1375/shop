@@ -42,8 +42,8 @@ class Shop extends Component {
         <header className="">
           <Mega_menu womanproducts={this.state.womanproducts} manproducts={this.state.manproducts} />
         </header>
-
-        <Row>
+         <Container>
+        <Row >
           <h3>woman products</h3>
           {womancategory}
         </Row>
@@ -52,6 +52,7 @@ class Shop extends Component {
           <h3>man products</h3>
           {mancategory}
         </Row>
+        </Container>
       </div>
     );
   }

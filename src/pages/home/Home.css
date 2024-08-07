@@ -1,3 +1,9 @@
+.m{
+  margin: 0 !important ;
+  padding: 0 !important ;
+  background-origin: border-box !important;
+}
+
 .hero_men {
     background-image: url('../../Imge/hero_men.jpg');
     background-position: center;
@@ -156,5 +162,6 @@
     top: 15rem;
     left: 5rem;
   }
+ 
  
  
