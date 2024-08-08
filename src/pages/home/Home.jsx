@@ -3,7 +3,46 @@ import { Col, Container, Row } from 'react-bootstrap'
 import "../home/Home.css"
 import Img1 from "../../Imge/download.png"
 import Li_custom from '../../component/Li-custom/Li_custom'
+import { manProducts, womanProducts } from '../../data/Data'
 function Home() {
+  let woman_category=(
+    <Col className='col-3'>
+    <ul>
+    {womanProducts.map(item=>{
+      return(
+      
+      <Li_custom name={item.name} classname='list-group-item' 
+      classLink='text-decoration-none text text-dark'/>
+    )
+    })}
+    </ul>
+    </Col>
+  )
+  let man_category=(
+    <Col className='col-3'>
+    <ul>
+    {manProducts.map(item=>{
+      return(
+      
+      <Li_custom name={item.name} classname='list-group-item' 
+      classLink='text-decoration-none text text-dark'/>
+    )
+    })}
+    </ul>
+    </Col>
+  )
+  // درمورد این کد لطفا توضیح داده شود
+  const woman_category_item = Array.from({ length: 4 }, (_, i) => (
+    <>
+    {woman_category}
+    </>
+  ));
+  const man_category_item = Array.from({ length: 4 }, (_, i) => (
+    <>
+    {man_category}
+    </>
+  ));
+
   return (
     <>
     <Container>
@@ -83,79 +122,10 @@ function Home() {
         <h3 className='text-center p-3'>woman categori </h3>
         <Container>
         <Row >
-        <Col className='col-3'>
-        <ul className='list-group'>
-          <Li_custom classname='list-group-item' name= "woman bags " classLink='text-decoration-none text text-dark'/>
-          <Li_custom classname='list-group-item' name= "woman gift " classLink='text-decoration-none text text-dark'/>
-          <Li_custom classname='list-group-item' name= "skirts " classLink='text-decoration-none text text-dark'/>
-          <Li_custom classname='list-group-item' name= "tops " classLink='text-decoration-none text text-dark'/>
-        </ul>
-        </Col>
-        <Col className='col-3'>
-        <ul className='list-group'>
-        <Li_custom classname='list-group-item' name= "blouses " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "jeans " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "shirts " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "shoes " classLink='text-decoration-none text text-dark'/>
-        
-        </ul></Col>
-        <Col className='col-3'>
-        <ul className='list-group'>
-        <Li_custom classname='list-group-item' name= "woman bags " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "woman gift " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "skirts " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "tops " classLink='text-decoration-none text text-dark'/>
-        
-        </ul>
-        </Col>
-        <Col className='col-3'>
-        <ul className='list-group'>
-        <Li_custom classname='list-group-item' name= "blouses " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "jeans " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "shirts " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "shoes " classLink='text-decoration-none text text-dark'/>
-    
-        </ul></Col>
-
-        </Row>
-        </Container>
-
+       {woman_category_item}
         <h3 className='text-center p-3'>man categori </h3>
-        <Container>
-        <Row>
-        <Col className='col-3 '>
-        <ul className='list-group'>
-        <Li_custom classname='list-group-item' name= "man bags " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "man gift " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "belts " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "tops " classLink='text-decoration-none text text-dark'/>
-        
-        </ul>
-        </Col>
-        <Col className='col-3'>
-        <ul className='list-group'>
-        <Li_custom classname='list-group-item' name= "blouses" classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "jeans " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "shirts " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "shoes " classLink='text-decoration-none text text-dark'/>
-         
-        </ul></Col>
-        <Col className='col-3'>
-        <ul className='list-group'>
-        <Li_custom classname='list-group-item' name= "man bags " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "man gift " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "belts " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "tops " classLink='text-decoration-none text text-dark'/>
-        </ul>
-        </Col>
-        <Col className='col-3'>
-        <ul className='list-group'>
-        <Li_custom classname='list-group-item' name= "blouses" classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "jeans " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "shirts " classLink='text-decoration-none text text-dark'/>
-        <Li_custom classname='list-group-item' name= "shoes " classLink='text-decoration-none text text-dark'/>
-        </ul></Col>
-
+          {man_category_item}
+          
         </Row>
         </Container>
     
@@ -164,4 +134,7 @@ function Home() {
 }
 
 export default Home
+
+
+ 
 
