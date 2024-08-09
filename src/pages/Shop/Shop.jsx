@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Mega_menu from "./megamenu/Mega_menu";
+import Mega_menu from "../../component/megamenu/Mega_menu";
 import Cart from "../../component/cart/Cart";
 import {womanProducts,manProducts} from '../../data/Data'
 
 function Shop() {
+ 
   return (
     
    <>

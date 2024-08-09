@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { womanProducts } from '../../../data/Data'
-import Li_custom from '../../../component/Li-custom/Li_custom'
+import { womanProducts } from '../../data/Data'
+import Li_custom from '../Li-custom/Li_custom'
 import { Prev } from 'react-bootstrap/esm/PageItem'
 
 function Mega_menu() {

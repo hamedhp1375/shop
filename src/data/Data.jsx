@@ -21,11 +21,12 @@ export const womanProducts = [
   ];
   
   export const manProducts = [
-    { id: 9, name: 'Dress', price: 900 , Img:Img5 },
+    { id: 9, name: 'jacket', price: 900 , Img:Img5 },
     { id: 10, name: 'T-Shirts', price: 1000 , Img:Img6 },
     { id: 11, name: 'Pants', price: 1100 , Img:Img7 },
     { id: 12, name: 'Suits', price: 1200 , Img:Img8 },
     { id: 13, name: 'Shoes', price: 1300 , Img:Img5 },
     { id: 14, name: 'Accessories', price: 1400 , Img:Img6 },
   ];
+  export const  Array_four=[1,2,3,4]
   

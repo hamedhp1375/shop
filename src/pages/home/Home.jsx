@@ -3,8 +3,9 @@ import { Col, Container, Row } from 'react-bootstrap'
 import "../home/Home.css"
 import Img1 from "../../Imge/download.png"
 import Li_custom from '../../component/Li-custom/Li_custom'
-import { manProducts, womanProducts } from '../../data/Data'
+import { manProducts, womanProducts , Array_four } from '../../data/Data'
 function Home() {
+  
   let woman_category=(
     <Col className='col-3'>
     <ul>
@@ -32,16 +33,32 @@ function Home() {
     </Col>
   )
   // درمورد این کد لطفا توضیح داده شود
-  const woman_category_item = Array.from({ length: 4 }, (_, i) => (
+  const woman_category_item = (
     <>
-    {woman_category}
+    {Array_four.map(item=>{
+      return(
+        <>
+        {woman_category}
+        </>
+
+      )
+    
+    })}
     </>
-  ));
-  const man_category_item = Array.from({ length: 4 }, (_, i) => (
+  )
+  const man_category_item = (
     <>
-    {man_category}
+    {Array_four.map(item=>{
+      return(
+        <>
+        {man_category}
+        </>
+
+      )
+    
+    })}
     </>
-  ));
+  )
 
   return (
     <>
