@@ -47,7 +47,7 @@
     bottom: 10px; /* Adjust as needed */
     left: 10px; /* Adjust as needed */
   }
-  .slide_1{
+  /* .slide_1{
     background-color: #CCFF00;
   }
   .slide_2{
@@ -58,7 +58,7 @@
   }
   .slide_4{
     background-color: #429F62;
-  }
+  } */
   .position_1_mark{
     background-image: url("../../Imge/cowgirl1.jpg");
     background-position: center;

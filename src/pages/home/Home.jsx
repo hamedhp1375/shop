@@ -4,6 +4,8 @@ import "../home/Home.css";
 import Img1 from "../../Imge/download.png";
 import Li_custom from "../../component/Li-custom/Li_custom";
 import { manProducts, womanProducts, Array_four } from "../../data/Data";
+import Home_slide from "../../component/Home_Component/Home_slide/Home_slide";
+import Home_hero from "../../component/Home_Component/Home_hero/Home_hero";
 function Home() {
   let woman_category = (
     <Col className="col-3">
@@ -60,38 +62,28 @@ function Home() {
       </Container>
       <Container>
         <Row>
-          <Col className="col-6 hero_men">
-            <h3 className="mark_left text-white">this i</h3>
-            <button className="position_men btn btn-secondary btn-lg">
-              men
-            </button>
-          </Col>
+      {[...Array(2)].map((item,index)=>(
+    <Home_hero positon={index===0? "hero_men":
+      "hero_women"}
+      name={index===0?"this i":
+        "s M&H"
+      }
+      button_name={index===0?"men":
+        "woman"
+      }
+      positon_button={index==0?"position_men":
+        "position_women"
+      }
+      positon_h4={index===0?"mark_left":
+        "mark_right"
+      }
+      />
 
-          <Col className="col-6 hero_women">
-            <h3 className="mark_right text-white">s M&H</h3>
-            <button className="position_women btn btn-secondary btn-lg">
-              women
-            </button>
-          </Col>
-        </Row>
-      </Container>
-      <Container className="pt-3">
-        <Row>
-          {["slide_1", "slide_2", "slide_3", "slide_4"].map((item, index) => (
-            <Col className={`col-3 ${item}`}>
-              <h4 className="text-center">
-                {index === 0
-                  ? "new here? get your ferst time discount"
-                  : index === 1
-                  ? "downliad our app for exclusive discounts and the latest drops"
-                  : index === 2
-                  ? "get unlimited next day delivery for a whole year with M&H premier for just 9.95$!"
-                  : "easy and fast returns"}
-              </h4>
-            </Col>
-          ))}
-        </Row>
-      </Container>
+   ))}
+   </Row>
+</Container>
+          <Home_slide/>
+          
       <h3 className="text-center p-3">the biggest lables </h3>
       {/* ye component dorst kon */}
       <Container>
@@ -101,9 +93,10 @@ function Home() {
           <img src={Img1} alt="" className={index===0?"icon1":
            index===1? "icon2":
            index===2?"icon3":
-           "icon4"
-
-          } />
+           "icon4"}
+           
+           
+           />
         </Col>
 
 
@@ -124,8 +117,10 @@ function Home() {
            index===1? "icon6":
            index===2?"icon7":
            "icon8"
-
-          } />
+            }
+            
+          
+          />
         </Col>
 
 
@@ -189,3 +184,20 @@ export default Home;
 <Col className="col-3 position_4_mark d-flex justify-content-center">
 <img src={Img1} alt="" className="icon4" />
 </Col> */}
+<Container>
+        <Row>
+          <Col className="col-6 hero_men">
+            <h3 className="mark_left text-white">this i</h3>
+            <button className="position_men btn btn-secondary btn-lg">
+              men
+            </button>
+          </Col>
+
+          <Col className="col-6 hero_women">
+            <h3 className="mark_right text-white">s M&H</h3>
+            <button className="position_women btn btn-secondary btn-lg">
+              women
+            </button>
+          </Col>
+        </Row>
+      </Container>
