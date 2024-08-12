@@ -184,7 +184,7 @@ export default Home;
 <Col className="col-3 position_4_mark d-flex justify-content-center">
 <img src={Img1} alt="" className="icon4" />
 </Col> */}
-<Container>
+{/* <Container>
         <Row>
           <Col className="col-6 hero_men">
             <h3 className="mark_left text-white">this i</h3>
@@ -200,4 +200,4 @@ export default Home;
             </button>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
